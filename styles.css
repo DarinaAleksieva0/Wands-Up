@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/HP.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    background-attachment: fixed;
+}
+
+.container-nav{
+    padding: 10px 10px;
+}
+
+nav{ 
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav img{
+    width: 200px;
+    height: 120px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+} 
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:  20px;
+    position: relative;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    border-radius: 3px;
+    background: #9E0D0D;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color:  #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    letter-spacing: 12px;
+    color: transparent;
+    -webkit-text-stroke: 1px #9E0D0D;
+    background: url(images/logo/back.png);
+    -webkit-background-clip: text; 
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+    padding: 12px 34px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #9E0D0D;
+    border-radius: 50px;
+}
+
+
+.hero-button:hover {
+    border: 1px solid #fff;
+    background: transparent;
+    transition: 1s;
+}
+
+/*-----------------------CONTACT-------------------------------------*/
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)) ,url(images/section-wrappers/contact-wrapper4.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+form h3{
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background: transparent;
+    font-size: 15px; 
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+}
+
+form button{
+    padding: 15px;
+    background: #9E0D0D;
+    color: #f5f5f5;
+    font-size: 18px;
+    border: 0;
+    outline:none;
+    cursor: pointer;
+    width: 130px;
+    margin: 10px auto 0;
+    border-radius: 30px;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+/*-----------------------CONTACT-------------------------------------*/
+/*-----------------------CAROUSEL-------------------------------------*/
+
+    .carousel{
+        width: 100%;
+        height: 100vh;
+        background: #222;
+    }
+
+    .swiper{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .swiper-slide img{
+        width:100%;
+    }
+
+/*-----------------------CAROUSEL-------------------------------------*/
+/*-----------------------BOOKS-------------------------------------*/
+
+.books-wrapper{
+    margin-top: 0px;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)) ,url(images/section-wrappers/book-wrapper.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.books{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.main-heading h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/logo/back.png);
+    -webkit-background-clip: text; 
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+.books-row{
+    display: flex;
+    margin-top: 70px;
+}
+
+.book{
+    display: flex;
+    width: 75%;
+    padding-left: 30px;
+}
+
+.book .book-icon{
+    margin-top: 5px;
+    height: 150px;
+    width: 110px;
+    display: flex;
+    border-radius: 50%;
+}
+
+.book .book-info .book-name{
+    display: flex;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.book .book-info .book-description{
+    font-weight: normal;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.horizontal-line{
+    height: 1px;
+    margin: 50px 0px;
+    background-color: #9E0D0D;
+}
+/*-----------------------BOOKS-------------------------------------*/
+/*-----------------------MOVIES-------------------------------------*/
+
+.movies{
+    width: 80%;
+    display: flex;
+    text-align: center;
+}
+
+.movie-wrapper{
+    margin-top: 0px;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)) ,url(images/section-wrappers/movie-wrapper2.jpg) ;
+    background-position: center;
+    position: relative;
+}
+
+/* .text-box-movie-collection{
+    display: flex;
+} */
+
+.movies-text-box{
+    margin: 150px 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movies-text-box h1{
+    width: 80%;
+    color:  #fff;
+    position: relative;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #9E0D0D;
+    background: url(images/logo/back.png);
+    -webkit-background-clip: text; 
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+.movie-hero-button{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 30px 50px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.movies-text-box h2{
+    width: 80%;
+    color:  #fff;
+    position: relative;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+    color: transparent;
+    -webkit-text-stroke: 1px #9E0D0D;
+    background: url(images/logo/back.png);
+    -webkit-background-clip: text; 
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+.movie-hero-button:hover{
+    border: 1px solid #9E0D0D;
+    transition: 1s;
+}
+
+.text-box-movie-collection{
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*-----------------------MOVIES-------------------------------------*/
+/*-----------------------GAME-------------------------------------*/
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/section-wrappers/game-countdown-wrapper2.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+}
+
+.content{
+    margin-bottom: 20px;
+    padding: 0 8%;
+    align-items: left;
+    position: relative;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.content h1{
+    font-size: 100px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+.content h1 span{
+    color: #9E0D0D;
+}
+
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
+
+.launch-time{
+    display: flex;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+
+}
+
+/*-----------------------GAME-------------------------------------*/
+/*-----------------------FOOTER-------------------------------------*/
+
+footer{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer .row .col{
+    flex-basis: 20%; /*first column uses onlu 25%*/
+    padding: 5px;
+}
+
+footer .row .col:nth-child(2){
+    flex-basis: 15%;
+}
+
+footer .row .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+footer .row .col .logo{
+    width: 100px;
+    margin-bottom: 30px;
+    height: 100px;
+}
+
+footer .row .col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+footer .row .col h4{
+    width: fit-content;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+footer .row .col ul li{
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+footer .row .col ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .row .col .socials .fa-brands{
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.underline{
+    width: 100%;
+    height: 3px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top:0;
+    left: 10px;
+    animation: moving 2s linear infinite; /*needs keyframes to move*/
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*responsive design*/
+
+@media only screen and (max-width: 600px){
+    .header{
+        background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/responsive/HP.jpg);
+    }
+}

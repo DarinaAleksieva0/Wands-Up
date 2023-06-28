@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/70d0617a4f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="container-nav">
+        <nav>
+            <a href="index.html"><img src="images/logo/final-logo1.png"></a>
+           
+                <ul>
+                    <li><a href="books.html" target="_blank">Books</a></li>
+                    <li><a href="movie.html" target="_blank">Movies</a></li>
+                    <li><a href="game.html" target="_blank">Game</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            
+        </nav>
+    </div>
+
+        <div class="text-box">
+            <h1>Harry Potter</h1>
+            <a href="https://www.wizardingworld.com/" class="hero-button" target="_blank">Click here to learn more</a>
+        </div>
+    </section>
+
+    <!--CONTACT SECTION-->
+    <div class="hero" id="contact">
+
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Contact us here</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button type="submit">Send</button>>
+        
+        </form>
+
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="images/logo/logo-footer3.png" alt="logo" class="logo">
+                <p>The novels chronicle the lives of a young wizard, Harry Potter,<br> and his friends Hermione Granger
+                    and Ron Weasley, <br>
+                    all of whom are students at Hogwarts School of Witchcraft and Wizardry. </p>
+            </div>
+            <div class="col">
+                <h3>Shop Location <div class="underline"><span></span></div>
+                </h3>
+                <p>Kings Cross Station</p>
+                <p>London N1 9AP, United Kingdom</p>
+                <p class="email-id"></p>
+                <h4>+44 20 7833 1137</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="https://www.imdb.com/title/tt15431326/">Tournaments of Houses</a></li>
+                    <li><a href="https://www.wizardingworld.com/harry-potter-fan-club">Fanclub</a></li>
+                    <li><a
+                            href="https://www.reddit.com/r/harrypotter/comments/16czca/rharrypotters_frequently_asked_questions_a_faq/">FAQ's</a>
+                    </li>
+                    <li><a href="https://www.harrypotteronlocation.co.uk/the-harry-potter-shop/">Shop</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Socials <div class="underline"><span></span></div>
+                </h3>
+                <div class="socials">
+                    <a href="https://www.facebook.com/harrypottermovie"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/harrypotterfilm/"><i class="fa-brands fa-instagram"></i></a>
+                    <a
+                        href="https://twitter.com/HarryPotterFilm?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+                            class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">HARRY POTTER, WIZARDING WORLD and related trademarks, characters, names and indicia are TM
+            and © Warner Bros. Entertainment Inc. <br>
+            All rights reserved.</p>
+    </footer>
+
+
+    <!--CONNECTING JS Contacts-->
+    <script src="contact.js"></script>
+   
+</body>
+
+</html>
